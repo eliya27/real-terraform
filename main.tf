@@ -28,7 +28,7 @@ provider "azuread" {
 #-----resource-group module-----
 
 module "resource-group" {
-  source = "../az-modules/res-group"
-  
+  source = "./az-modules/res-group"
+
 }
 
