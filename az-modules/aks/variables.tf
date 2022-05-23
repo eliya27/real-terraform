@@ -18,3 +18,13 @@ variable "tags" {
      env = "dev"
   }
 }
+
+variable "client_id" {
+    description =   "Client ID (APP ID) of the application"
+    type        =   string
+}
+
+variable "client_secret" {
+    description =   "Client Secret (Password) of the application"
+    type        =   string
+}
