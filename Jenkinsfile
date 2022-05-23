@@ -26,7 +26,7 @@ pipeline{
                         
                         echo "********Initialising Terraform********"
                         sh """
-                        terraform init -backend-config="access-key=$ARM_ACCESS_KEY"
+                        terraform init -var "resource-group-name=real-rg" -var "resource-group-location=eastus2" -backend-config="access-key=$ARM_ACCESS_KEY"
                         """
                         
                         echo "**********Terraform sucessful initialized*******"
