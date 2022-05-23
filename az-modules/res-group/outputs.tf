@@ -1,7 +1,7 @@
 output "resource-group-name" {
-   value  = module.resource_group.name
+   value  = azurerm_resource_group.resource_group.name
 }
 
 output "resource-group-location" {
-  value  = module.resource_group.location
+  value  = azurerm_resource_group.resource_group.location
 }
