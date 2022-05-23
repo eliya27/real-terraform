@@ -30,6 +30,6 @@ provider "azuread" {
 
 
 module "aks" {
-   source = "./az-modules/res-group"
+   source = "./az-modules/aks"
 }
 
