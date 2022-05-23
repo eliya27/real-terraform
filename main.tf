@@ -27,10 +27,9 @@ provider "azuread" {
 
 #-----resource-group module-----
 
-module "resource-group" {
-  source = "./az-modules/res-group"
-
-}
+#module "resource-group" {
+  #source = "./az-modules/res-group"
+#}
 
 module "aks" {
    source = "./az-modules/res-group"
