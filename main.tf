@@ -32,3 +32,7 @@ module "resource-group" {
 
 }
 
+module "aks" {
+   source = "./az-modules/res-group"
+}
+
