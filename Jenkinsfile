@@ -26,7 +26,7 @@ pipeline{
                         
                         echo "********Initialising Terraform********"
                         sh """
-                        terraform init -backend-config="access-key=$ARM_ACCESS_KEY"
+                        terraform init 
                         """
                         
                         echo "**********Terraform sucessful initialized*******"
