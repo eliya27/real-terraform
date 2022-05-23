@@ -4,12 +4,13 @@ variable "rglocation" {
 
 }
 
-variable "tags" {
+variable "env" {
   type = string
+  default = "value"
  
 }
 
-variable "env" {
+variable "tags" {
   type = map(string)
   default = {
      author = "eliya gervas"
