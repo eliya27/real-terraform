@@ -24,16 +24,16 @@ resource "azurerm_kubernetes_cluster" "k8s" {
    
    default_node_pool {
     name                 =    "aksnode"
-    availability_zones   =    [1, 2, 3]
-    enable_auto_scaling  =    true
-    max_count            =    3
-    min_count            =    1
+    #availability_zones   =    [1, 2, 3]
+    #enable_auto_scaling  =    true
+    #max_count            =    3
+    #min_count            =    1
     orchestrator_version =    data.azurerm_kubernetes_service_versions.current.latest_version
     os_disk_size_gb      =    30
     vm_size              =    "standard_ds15_v2"
     #Standard D2as v4 (2 vcpus, 8 GiB memory)Standard_D2a_v4
     node_count           =    1
-    type                 =    "VirtualMachineScaleSets"
+    #type                 =    "VirtualMachineScaleSets"
   }
 
   addon_profile {
