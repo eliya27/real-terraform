@@ -26,7 +26,7 @@ pipeline{
                         
                         echo "********Initialising Terraform********"
                         sh """
-                        terraform init -backend-config="access-key=$ARM_ACCESS_KEY" -var "client_id=$ARM_CLIENT_ID" -var "client_secret=$ARM_CLIENT_SECRET"
+                        terraform init -backend-config="access-key=$ARM_ACCESS_KEY" 
                         """
                         
                         echo "**********Terraform sucessful initialized*******"
