@@ -1,6 +1,6 @@
 variable "rglocation" {
   type = string
-  default = "eastus"
+  default = "southafricanorth"
 
 }
 
