@@ -3,8 +3,13 @@ resource "azurerm_resource_group" "rg" {
   location = var.rg_location
 }
 
+resource "random_integer" "random" {
+  min = 10
+  max = 100
+}
+
 resource "azurerm_container_registry" "acr" {
-  name                = "${var.env}acr"
+  name                = "${var.env}acr${random_integer.random.result}"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
 }
