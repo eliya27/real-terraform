@@ -37,7 +37,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
 
   addon_profile {
     kube_dashboard {
-      enabled = true
+      enabled = false
     }
   }
 
