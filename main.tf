@@ -29,9 +29,9 @@ provider "azuread" {
 
 
 
-#module "aks" {
-#   source = "./az-modules/aks"
-#}
+module "aks" {
+   source = "./az-modules/aks"
+}
 
 module "acr" {
    source = "./az-modules/acr"
