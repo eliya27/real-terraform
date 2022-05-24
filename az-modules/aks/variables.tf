@@ -6,7 +6,7 @@ variable "rglocation" {
 
 variable "env" {
   type = string
-  default = "value"
+  default = "dev"
  
 }
 
